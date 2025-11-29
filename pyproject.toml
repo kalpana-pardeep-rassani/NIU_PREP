@@ -1,0 +1,19 @@
+[project]
+name = "NIU_PREP"
+version = "0.1.0"
+
+[project.optional-dependencies]
+testing = [
+    "pytest>=7.0",
+]
+
+# CRITICAL FIX SECTION
+[tool.pytest.ini_options]
+# This tells pytest to add the 'src' directory to the Python path
+# so 'from src.utils import greet' works.
+pythonpath = ["src"]
+
+# CRITICAL FOR BUILD
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
