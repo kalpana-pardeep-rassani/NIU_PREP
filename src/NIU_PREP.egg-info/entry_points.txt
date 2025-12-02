@@ -1,0 +1,2 @@
+[console_scripts]
+niu-greet = src.cli:niu_greet

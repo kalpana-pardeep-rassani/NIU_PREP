@@ -1,5 +1,7 @@
 Metadata-Version: 2.4
 Name: NIU_PREP
 Version: 0.1.0
+Requires-Dist: fancylog>=0.4
+Requires-Dist: click>=8.0
 Provides-Extra: testing
 Requires-Dist: pytest>=7.0; extra == "testing"

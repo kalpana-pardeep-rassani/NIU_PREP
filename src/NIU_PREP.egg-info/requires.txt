@@ -1,3 +1,5 @@
+fancylog>=0.4
+click>=8.0
 
 [testing]
 pytest>=7.0

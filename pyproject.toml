@@ -2,10 +2,21 @@
 name = "NIU_PREP"
 version = "0.1.0"
 
+dependencies = [
+    "fancylog>=0.4",
+    "click>=8.0",
+]
+
 [project.optional-dependencies]
 testing = [
     "pytest>=7.0",
 ]
+
+# --- CLI ENTRY POINT ---
+[project.scripts]
+# Defines the command 'niu-greet' which executes the function 'niu_greet'
+# inside the module 'src.cli'
+niu-greet = "src.cli:niu_greet"
 
 # CRITICAL FIX SECTION
 [tool.pytest.ini_options]
